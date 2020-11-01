@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingTop="@dimen/activity_margin">
+
+    <TextView android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/lbl_new_student_title"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/lbl_new_student_title"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/student_identifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="@string/hint_enter_student_identifier"
+        android:inputType="text"
+        android:lines="4"
+        android:textColorHint="@color/hint_enter_student"
+        android:textSize="@dimen/input_new_student" />
+
+    <EditText
+        android:id="@+id/student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="@string/hint_enter_student_name"
+        android:inputType="textCapWords"
+        android:textColorHint="@color/hint_enter_student"
+        android:textSize="@dimen/input_new_student" />
+
+    <!-- with more time, would be interesting to explore Spinner for a drop down... -->
+    <EditText
+        android:id="@+id/student_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="@string/hint_enter_student_priority"
+        android:inputType="text"
+        android:textColorHint="@color/hint_enter_student"
+        android:textSize="@dimen/input_new_student" />
+
+</LinearLayout>
